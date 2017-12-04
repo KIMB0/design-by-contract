@@ -13,10 +13,10 @@ public class Account {
     //@ requires amount > 0
     //@ assignable account_balance;
     //@ ensures account_balance \old(account_balance) + amount;
-    public double deposit(double amount) throws BankException {
+    public double deposit(double amount) throws Exception {
         if (amount > 0) return this.account_balance += amount;
         else {
-            throw new BankException("The deposited amount must by larger than 0.");
+            throw new Exception("The deposited amount must by larger than 0.");
         }
     }
 
@@ -26,11 +26,11 @@ public class Account {
     //@ also
     //@ requires account_balance < amount
     //@ signals_only BankException(String message);
-    public double withdraw(double amount) throws BankException {
+    public double withdraw(double amount) throws Exception {
         if (amount <= this.account_balance)
             return this.account_balance -= amount;
         else {
-            throw new BankException("The balance is too low compared to the withdrawn amount.");
+            throw new Exception("The balance is too low compared to the withdrawn amount.");
         }
     }
 

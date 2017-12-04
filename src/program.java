@@ -2,7 +2,7 @@ public class program {
 
 
 
-    public static void main(String[] args) throws BankException {
+    public static void main(String[] args) throws Exception {
         Account bank = new Account();
         bank.deposit(100);
         System.out.println("Balance after deposit:");
