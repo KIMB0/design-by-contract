@@ -1,11 +1,12 @@
 # Design by contract - Discrete Mathematics
-> Created by Alexander Falk, CPHBusiness, Software Development BA
+> Created by Alexander Falk and edited by Kim Meyer Albrechtsen, CPHBusiness, Software Development BA, group E
 
-This github contains a java program which shows the use of Java Modelling Language (JML), 
+This simple program is written in java, 
 which can be used to create an application by the principle; Design By Contract.  
-  
-In the class Account you'll find annotations above variables and methods. 
-These annotations are JML keywords to be interpreted by other developers.  
+
+
+In the class Account you'll find attributes above variables and methods. 
+These attributes are JML keywords to be interpreted by other developers.  
 Those who are used in this application are as follows:  
 * `requires` Defines a precondition on the method that follows
 * `ensures` - Defines a postcondition on the method that follows
